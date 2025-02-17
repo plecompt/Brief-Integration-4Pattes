@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
-    color: white;
+    /* font-family: Montserrat, sans-serif; */
+}
+
+header{
+    background-color:#057858;
+}
+
+
+footer {
+    background-color: #1F2937;
 }
