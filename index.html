@@ -15,14 +15,14 @@
                 <img src="assets/images/logo.png" alt="Logo du site.">
             </div>
             <div class="right flex">
-                <a href="#" class="acceuil" class="fontSizeAndWeight" fontSize="32" fontWeight="400">Acceuil</a>
-                <a href="#" class="contact" class="fontSizeAndWeight" fontSize="32" fontWeight="400">Contact</a>
-                <button class="flex"><img src="assets/images/icon-heart.png" alt="" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Faire un don</button>
+                <a href="#" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Acceuil</a>
+                <a href="#" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Contact</a>
+                <button class="flex" role="button"><img src="assets/images/icon-heart.png" alt="icône de cœur pour le don" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Faire un don</button>
             </div>
         </div>
-        <div class="haut-page">
-            <img src="assets/images/haut-page.png" alt="Deux chiens qui courent.">
-            <p><span class="fontSizeAndWeight" fontSize="80" fontWeight="800">Protégeons-les Ensemble</span><br><span class="fontSizeAndWeight" fontSize="32" fontWeight="800">Chaque don compte pour leur offrir une vie meilleure</span></p>
+        <div class="haut-page flex">
+            <p class="fontSizeAndWeight" fontSize="60" fontWeight="800">Protégeons-les Ensemble</p>
+            <p class="fontSizeAndWeight" fontSize="32" fontWeight="800">Chaque don compte pour leur offrir une vie meilleure</p>
         </div> 
     </header>
     <main>
@@ -44,12 +44,12 @@
                     </div>
                 </div>
                 <div class="middlePart flex">
-                    <button id="oneTime" class="fontSizeAndWeight" fontSize="16" fontWeight="400">Une fois</button>
-                    <button id="mensuel" class="fontSizeAndWeight" fontSize="16" fontWeight="400">Mensuel</button>
-                    <button id="year" class="fontSizeAndWeight" fontSize="16" fontWeight="400">Annuel</button>
+                    <button id="oneTime" class="fontSizeAndWeight" fontSize="16" fontWeight="400" role="button">Une fois</button>
+                    <button id="mensuel" class="fontSizeAndWeight" fontSize="16" fontWeight="400" role="button">Mensuel</button>
+                    <button id="year" class="fontSizeAndWeight" fontSize="16" fontWeight="400" role="button">Annuel</button>
                 </div>
                 <div class="bottomPart flex">
-                    <button id="donate" class="fontSizeAndWeight" fontSize="28" fontWeight="400">Faites un don de x par mois</button>
+                    <button id="donate" class="fontSizeAndWeight" fontSize="28" fontWeight="400" role="button">Faites un don de x par mois</button>
                 </div>
             </div>
         </section>
@@ -60,17 +60,18 @@
                 </div>
                 <div class="right flex">
                     <h1 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Notre mission</h1>
-                    <br>
-                    <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Depuis 2010, Quatre pattes oeuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale.</p>
-                    <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou bléssés. Grâce à notre réseau de familles d’acceuil et nos partenariats avec des refuges, nour leur offrons une seconde change.</p>
+                    <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Depuis 2010, Quatre pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale.</p>
+                    <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d’acceuil et nos partenariats avec des refuges, nous leur offrons une seconde chance.</p>
                     <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous</p>
                 </div>
             </div>
         </section>
         <section id="reussite">
-            <h1 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Histoire de Réussite</h1>
             <div class="reussite-container flex">
                 <div class="top flex">
+                    <h1 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Histoire de Réussite</h1>
+                </div>
+                <div class="middle flex">
                     <div class="image-container">
                         <img src="assets/images/luna.png" alt="Luna le chien.">
                         <span id="animalDescription" class="fontSizeAndWeight" fontSize="30" fontWeight="400">Le texte à changer en fonction de l'animal</span>
@@ -98,27 +99,25 @@
                 <div class="question flex shadows">
                     <p class="fontSizeAndWeight" fontSize="24" fontWeight="800">Les associations gardent la majorité des dons pour leur fonctionnement</p>
                     <div class="answers flex">
-                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Vrai, les associations utilisent plus de 50% des dons pour leur frais de fonctionnement</button>
-                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Faux</button>
+                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Vrai, les associations utilisent plus de 50% des dons pour leur frais de fonctionnement</button>
+                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Faux</button>
                     </div>
                 </div>
                 <div class="question flex shadows">
                     <p class="fontSizeAndWeight" fontSize="24" fontWeight="800">Les refuges ne prennent que les animaux en bonne santé</p>
                     <div class="answers flex">
-                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Vrai, ils refusent les animaux malades car c’est trop coûteux</button>
-                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Faux</button>
+                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Vrai, ils refusent les animaux malades car c’est trop coûteux</button>
+                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Faux</button>
                     </div>
                 </div>
                 <div class="question flex shadows">
                     <p class="fontSizeAndWeight" fontSize="24" fontWeight="800">Les associations ont trop de moyen grâce aux dons</p>
                     <div class="answers flex">
-                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Vrai, elles recoivent beaucoup d’argent des donateurs</button>
-                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Faux</button>
+                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Vrai, elles reçoivent beaucoup d’argent des donateurs</button>
+                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Faux</button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="impact">
             <div class="impact-container flex">
                 <h1 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Notre Impact</h1>
                 <div class="icones-container flex">
@@ -134,7 +133,7 @@
                     </div>
                     <div class="elem flex">
                         <img src="assets/images/icon-repas.png" alt="icon de repas">
-                        <p class="fontSizeAndWeight" fontSize="22" fontWeight="800">10 000+ repas<p>
+                        <p class="fontSizeAndWeight" fontSize="22" fontWeight="800">10 000+ repas</p>
                         <p class="fontSizeAndWeight" fontSize="14" fontWeight="400">Distribués par mois</p>
                     </div>
                 </div>
@@ -148,7 +147,7 @@
                         <img src="assets/images/refuge-lyon.png" alt="Images d'animaux au refuge de Lyon.">
                     </div>
                     <div class="bottom flex">
-                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="400">“Grâce aux dons, nous avons pu acceuilir plus de 200 animaux cette année et leur offrir une seconde chance.”</p>
+                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="400">“Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance.”</p>
                         <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Refuge des Quatre Pattes - Lyon</p>
                     </div>
                 </div>
