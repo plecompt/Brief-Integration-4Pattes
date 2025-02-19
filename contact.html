@@ -22,18 +22,18 @@
         </div>
     </header>
     <main>
-        <section id="contact" class="flex">
-            <h1>Contactez-nous</h1>
-            <form action="submit" id="formulaire" class="flex shadows">
-                <div class="flex">
+        <section id="contact" class="flex flexColumn">
+            <h1 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Contactez-nous</h1>
+            <form action="submit" id="formulaire" class="flex flexColumn shadows">
+                <div class="flex flexColumn">
                     <label for="name">Nom</label>
                     <input type="text" id="name">
                 </div>
-                <div class="flex">
+                <div class="flex flexColumn">
                     <label for="mail">Email</label>
                     <input type="text">
                 </div>
-                <div class="flex">
+                <div class="flex flexColumn">
                     <label for="subject">Sujet</label>
                     <select name="subject" id="subject">
                         <option value="dons">Questions sur les dons</option>
@@ -41,7 +41,7 @@
                         <option value="general">Questions générales et autre</option>
                     </select>
                 </div>
-                <div class="flex">
+                <div class="flex flexColumn">
                     <label for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Votre message" rows="10"></textarea>
                 </div>
@@ -50,18 +50,18 @@
         </section>
     </main>
    <footer class="flex">
-        <div class="left">
+        <div class="left flexColumn">
             <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Quatre Pattes</p>
             <p class="fontSizeAndWeight" fontSize="16" fontWeight="400">Ensemble, protégeons les animaux et donnons-leur une vie meilleure.</p>
         </div>
-        <div class="middle">
+        <div class="middle flexColumn">
             <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Contact</p>
             <div class="mail flex">
                 <img src="assets/images/icon-mail.png" alt="icon email.">
                 <p class="fontSizeAndWeight" fontSize="16" fontWeight="400"> contact@quatrepattes.org</p>
             </div>
         </div>
-        <div class="right">
+        <div class="right flexColumn">
             <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Suivez-nous</p>
         </div>
     </footer>

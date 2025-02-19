@@ -1,3 +1,4 @@
+/* Utilitaires non specifiques à une section en particulier */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,11 @@
     align-items: center;
 }
 
+.flexColumn {
+    flex-direction: column;
+}
+
+/* Voir JS, set --fontSize et --fontWeight à la valeur attribuée dans le fichier HTML */
 .fontSizeAndWeight {
     font-size: var(--fontSize);
     font-weight: var(--fontWeight);
@@ -28,7 +34,7 @@ h2 {
     margin: 7vh 0;
 }
 
-/* section header */
+/* Header */
 .nav {
     background-color:#057858;
     justify-content: space-between;
@@ -46,13 +52,13 @@ a {
     padding: 5px 10px;
     border: none;
     border-radius: 10px;
+    gap: 5px;
 }
 
 .nav > .right {
     align-items: center;
     gap: 30px;
 }
-
 
 .haut-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/haut-page.png);
@@ -61,26 +67,26 @@ a {
     background-repeat: no-repeat;
     height: 700px;
     color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     gap: 10px;
 }
 
-/* section dons */
+/* Section dons */
 #dons {
-    flex-direction: column;
     gap: 2%;
     padding: 0 10vw;
     margin-bottom: 5vh;
 }
 
-.dons-container{
+.dons-container {
     padding: 3vh 3vw;
-    flex-direction: column;
     gap: 50px;
     border-radius: 15px;
+    max-width: 1000px;
+}
+
+.topPart{
+    align-items: stretch;
 }
 
 .middlePart, .topPart {
@@ -92,10 +98,8 @@ a {
 }
 
 .don {
-    flex-direction: column;
+    flex: 1;
     gap: 10px;
-    height: 200px;
-    width: 250px;
     padding: 1vh;
     border-radius: 15px;
     border: 2px solid rgb(202, 202, 202);
@@ -123,8 +127,7 @@ a {
     width: 100%;
 }
 
-/* section mission */
-
+/* Section mission */
 #mission {
     background-color: #E2FCEF;
     padding: 8vh 2vw;
@@ -150,14 +153,12 @@ a {
 }
 
 .mission-container > .right {
-    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 0 5vw 5vh 1vw;
 }
 
-/* section reussite */
-
+/* Section reussite */
 #reussite {
     background-color: white;
     height: 1000px;
@@ -167,7 +168,6 @@ a {
     padding: 0 8vw;
     height: 90%;
     width: 100%;
-    flex-direction: column;
     gap: 5px;
     justify-content: space-between;
 }
@@ -189,7 +189,7 @@ a {
     width: 100%;
 }
 
-#reussite .bottom span{
+#reussite .bottom span {
     position: absolute;
     color: white;
     top: 50%;
@@ -200,13 +200,11 @@ a {
 #animalDescription {
     position: absolute;
     color: white;
-    width: 300px; /* a voir */
-    height: 1px;
     bottom: 10%;
     left: 10%;
 }
 
-#reussite img{
+#reussite img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -214,20 +212,18 @@ a {
     filter: brightness(0.4);
 }
 
-/* section quizz */
+/* Section quizz */
 #quizz {
     background-color: #E2FCEF;
     padding-bottom: 5vh;
 }
 
 .quizz-container {
-    flex-direction: column;
     gap: 5vh;
 }
 
 .question {
     width: 75%;
-    flex-direction: column;
     background-color: white;
     padding: 3vh 3vw;
     border-radius: 15px;
@@ -245,7 +241,7 @@ a {
     width: 100%;
 }
 
-#true, #false{
+#true, #false {
     display: flex;
     flex: 1;
     background-color: #F5F3F3;
@@ -256,36 +252,29 @@ a {
     padding: 1vh 1vw;
 }
 
-.impact-container {
-    flex-direction: column;
-}
-
 .icones-container {
     gap: 10vw;
 }
 
 .elem {
-    flex-direction: column;
     text-align: center;
     gap: 10px;
 }
 
-/* section temoignages */
+/* Section temoignages */
 #temoignages {
-    flex-direction: column;
     padding: 0 5vw 7vh;
 }
 
-.temoignages-container{
+.temoignages-container {
     align-items: stretch;
     width: 100%;
     gap: 2vw;
 }
 
-.temoignage{
+.temoignage {
     flex: 1;
     border-radius: 15px;
-    flex-direction: column;
 }
 
 .temoignage .top, .temoignage .bottom {
@@ -293,7 +282,7 @@ a {
     height: 50%;
 }
 
-.temoignage img{
+.temoignage img {
     object-fit: cover;
     height: 200px;
     width: 100%;
@@ -313,8 +302,7 @@ a {
     align-items: center;
 }
 
-/* section footer */
-
+/* Footer */
 footer {
     background-color: #1F2937;
     padding: 5vh 5vw;
@@ -324,7 +312,6 @@ footer {
 
 footer .left, footer .middle, footer .right {
     flex: 1;
-    flex-direction: column;
 }
 
 .mail {
@@ -332,15 +319,13 @@ footer .left, footer .middle, footer .right {
     justify-content: flex-start;
 }
 
-/* section contact */
+/* Section contact */
 #contact {
     margin: 5vh;
-    flex-direction: column;
     gap: 5vh;
 }
 
 #formulaire {
-    flex-direction: column;
     align-items: flex-start;
     max-width: 1000px;
     width: 90%;
@@ -351,7 +336,6 @@ footer .left, footer .middle, footer .right {
 
 #formulaire div {
     align-items: flex-start;
-    flex-direction: column;
     width: 100%;
     gap: 3px;
 }
@@ -387,62 +371,19 @@ textarea {
 
 @media (max-width: 1000px) /* screen-width < 1000px */
 {
-    /* nav */
-    .nav {
-        gap: 15px
-    }
-
+    /* le texte passe à droite plutot qu'au centre */
     .nav, .nav .right {
-        flex-direction: column;
+        gap: 20px;
         align-items: flex-start;
     }
 
-    .nav > .right > button {
-        width: 90vw;
-    }
-
-    /* section dons */
-    .dons-container {
-        width: 95vw;
-    }
-
-    .topPart {
+    /* changement de flex-direction row à column */
+    .nav, .nav .right, .topPart, .mission-container, .answers, .icones-container, .temoignages-container, footer {
         flex-direction: column;
     }
-
-    .don {
-        width: 100%;
-        height: 150px;
-    }
-
-    /* section mission */
-    .mission-container {
-        flex-direction: column;
-    }
-
-    /*section quizz */
-    .answers {
-        align-items: stretch;
-        flex-direction: column;
-    }
- 
-    /* section impact */
-    .icones-container {
-        flex-direction: column;
-    }
-
-    /*section temoignages*/
-    .temoignages-container {
-        flex-direction: column;
-    }
-
-    /* footer */
-    footer {
-        flex-direction: column;
-    }
-
-    footer .left, footer .middle, footer .right {
-        justify-content: flex-start;
+    
+    /* dois prendre toute la largeur de la page */
+    .nav > .right > button, .dons-container, footer .left, footer .middle, footer .right {
         width: 90vw;
     }
 }
