@@ -34,6 +34,11 @@ h2 {
     margin: 7vh 0;
 }
 
+/* Permet de cacher certaines sections */
+.hidden {
+    display: none !important;
+}
+
 /* Header */
 .nav {
     background-color:#057858;
@@ -385,5 +390,9 @@ textarea {
     /* dois prendre toute la largeur de la page */
     .nav > .right > button, .dons-container, footer .left, footer .middle, footer .right {
         width: 90vw;
+    }
+
+    .mission-container > .right {
+        padding: 20px;
     }
 }

@@ -10,183 +10,19 @@
 </head>
 <body>
     <header>
-        <div class="nav flex">
-            <div class="left flex">
-                <img src="assets/images/logo.png" alt="Logo du site.">
-            </div>
-            <div class="right flex">
-                <a href="index.html" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Accueil</a>
-                <a href="contact.html" class="fontSizeAndWeight" fontSize="18" fontWeight="400">Contact</a>
-                <button class="flex fontSizeAndWeight" fontSize="18" fontWeight="400" role="button"><img src="assets/images/icon-heart.png" alt="icône de cœur pour le don" >Faire un don</button>
-            </div>
-        </div>
-        <div class="haut-page flex flexColumn">
-            <h1 class="fontSizeAndWeight" fontSize="48" fontWeight="800">Protégeons-les Ensemble</h1>
-            <p class="fontSizeAndWeight" fontSize="20" fontWeight="800">Chaque don compte pour leur offrir une vie meilleure</p>
-        </div> 
+        <div id="navigation"></div>
+        <div id="hautpage"></div>
     </header>
     <main>
-        <section id="dons" class="flex flexColumn">
-            <h2 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Faites un don</h2>
-            <div class="dons-container flex flexColumn shadows">
-                <div class="topPart flex">
-                    <div class="don flex flexColumn">
-                        <h3 class="fontSizeAndWeight" fontSize="30" fontWeight="800">10€</h3>
-                        <span class="fontSizeAndWeight" fontSize="16" fontWeight="400">Permet de nourrir 5 animaux pendant une journée</span>
-                    </div>
-                    <div class="don flex flexColumn">
-                        <h3 class="fontSizeAndWeight" fontSize="30" fontWeight="800">20€</h3>
-                        <span class="fontSizeAndWeight" fontSize="16" fontWeight="400">Permet d’héberger un animal sauvage pendant une nuit</span>
-                    </div>
-                    <div class="don flex flexColumn">
-                        <h3 class="fontSizeAndWeight" fontSize="30" fontWeight="800">50€</h3>
-                        <span class="fontSizeAndWeight" fontSize="16" fontWeight="400">Permet de financer les soins vétérinaires complets pour un animal</span>
-                    </div>
-                </div>
-                <div class="middlePart flex">
-                    <button id="oneTime" class="fontSizeAndWeight" fontSize="16" fontWeight="400" role="button">Une fois</button>
-                    <button id="mensuel" class="fontSizeAndWeight" fontSize="16" fontWeight="400" role="button">Mensuel</button>
-                    <button id="year" class="fontSizeAndWeight" fontSize="16" fontWeight="400" role="button">Annuel</button>
-                </div>
-                <div class="bottomPart flex">
-                    <button id="donate" class="fontSizeAndWeight" fontSize="28" fontWeight="400" role="button">Faites un don de x par mois</button>
-                </div>
-            </div>
-        </section>
-        <section id="mission">
-            <div class="mission-container flex">
-                <div class="left">
-                    <img src="assets/images/mission.png" alt="Chiot qui court.">
-                </div>
-                <div class="right flex flexColumn">
-                    <h2 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Notre mission</h2>
-                    <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Depuis 2010, Quatre pattes œuvre sans relâche pour la protection et le bien-être des animaux en France. Notre mission est double : secourir les animaux en détresse et sensibiliser le public à la cause animale.</p>
-                    <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Chaque année, nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés. Grâce à notre réseau de familles d’accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance.</p>
-                    <p class="fontSizeAndWeight" fontSize="19" fontWeight="400">Votre soutien est essentiel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces êtres qui comptent sur nous.</p>
-                </div>
-            </div>
-        </section>
-        <section id="reussite">
-            <div class="reussite-container flex flexColumn">
-                <div class="top flex">
-                    <h2 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Histoire de Réussite</h2>
-                </div>
-                <div class="middle flex">
-                    <div class="image-container">
-                        <img src="assets/images/luna.png" alt="Luna le chien.">
-                        <span id="animalDescription" class="fontSizeAndWeight" fontSize="30" fontWeight="400">Le texte à changer</span>
-                    </div>
-                </div>
-                <div class="bottom flex">
-                    <div class="image-container">
-                        <img src="assets/images/luna.png" alt="Luna le chien.">
-                        <span class="fontSizeAndWeight" fontSize="30" fontWeight="800">Luna</span>
-                    </div>
-                    <div class="image-container">
-                        <img src="assets/images/oscar.png" alt="Oscar le chat.">
-                        <span class="fontSizeAndWeight" fontSize="30" fontWeight="800">Oscar</span>
-                    </div>
-                    <div class="image-container">
-                        <img src="assets/images/max.png" alt="Max le chien trop classe.">
-                        <span class="fontSizeAndWeight" fontSize="30" fontWeight="800">Max</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="quizz">
-            <div class="quizz-container flex flexColumn">
-                <h2 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Testez Vos Connaissances</h2>
-                <div class="question flex flexColumn shadows">
-                    <p class="fontSizeAndWeight" fontSize="24" fontWeight="800">Les associations gardent la majorité des dons pour leur fonctionnement</p>
-                    <div class="answers flex">
-                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Vrai, les associations utilisent plus de 50% des dons pour leur frais de fonctionnement</button>
-                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Faux</button>
-                    </div>
-                </div>
-                <div class="question flex flexColumn shadows">
-                    <p class="fontSizeAndWeight" fontSize="24" fontWeight="800">Les refuges ne prennent que les animaux en bonne santé</p>
-                    <div class="answers flex">
-                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Vrai, ils refusent les animaux malades car c’est trop coûteux</button>
-                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Faux</button>
-                    </div>
-                </div>
-                <div class="question flex flexColumn shadows">
-                    <p class="fontSizeAndWeight" fontSize="24" fontWeight="800">Les associations ont trop de moyens grâce aux dons</p>
-                    <div class="answers flex">
-                        <button id="true" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Vrai, elles reçoivent beaucoup d’argent des donateurs</button>
-                        <button id="false" class="fontSizeAndWeight" fontSize="18" fontWeight="400" role="button">Faux</button>
-                    </div>
-                </div>
-            </div>
-            <div class="impact-container flex flexColumn">
-                <h2 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Notre Impact</h2>
-                <div class="icones-container flex">
-                    <div class="elem flex flexColumn">
-                        <img src="assets/images/icon-refuge.png" alt="icon de refuge">
-                        <p class="fontSizeAndWeight" fontSize="22" fontWeight="800">50+ refuges</p>
-                        <p class="fontSizeAndWeight" fontSize="14" fontWeight="400">Partenaires à travers la France</p>
-                    </div>
-                    <div class="elem flex flexColumn">
-                        <img src="assets/images/icon-animaux.png" alt="icon d'animaux">
-                        <p class="fontSizeAndWeight" fontSize="22" fontWeight="800">1000+ animaux</p>
-                        <p class="fontSizeAndWeight" fontSize="14" fontWeight="400">Sauvés chaque année</p>
-                    </div>
-                    <div class="elem flex flexColumn">
-                        <img src="assets/images/icon-repas.png" alt="icon de repas">
-                        <p class="fontSizeAndWeight" fontSize="22" fontWeight="800">10 000+ repas</p>
-                        <p class="fontSizeAndWeight" fontSize="14" fontWeight="400">Distribués par mois</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="temoignages" class="flex flexColumn">
-            <h2 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Témoignages</h2>
-            <div class="temoignages-container flex">
-                <div class="temoignage flex flexColumn shadows">
-                    <div class="top flex">
-                        <img src="assets/images/refuge-lyon.png" alt="Images d'animaux au refuge de Lyon.">
-                    </div>
-                    <div class="bottom flex">
-                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="400">“Grâce aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une seconde chance.”</p>
-                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Refuge des Quatre Pattes - Lyon</p>
-                    </div>
-                </div>
-                <div class="temoignage flex flexColumn shadows">
-                    <div class="top flex">
-                        <img src="assets/images/refuge-marseille.png" alt="Images d'animaux au refuge de Marseille.">
-                    </div>
-                    <div class="bottom flex">
-                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="400">“Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.”</p>
-                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Sanctuaire Animal - Marseille</p>
-                    </div>
-                </div>
-                <div class="temoignage flex flexColumn shadows">
-                    <div class="top flex">
-                        <img src="assets/images/refuge-paris.png" alt="Images d'animaux au refuge de Paris.">
-                    </div>
-                    <div class="bottom flex">
-                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="400">“Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.”</p>
-                        <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Refuge du Soleil - Paris</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="contact"></section>
+        <section id="dons" class="flex flexColumn"></section>
+        <section id="mission"></section>
+        <section id="reussite"></section>
+        <section id="quizz"></section>
+        <section id="temoignages" class="flex flexColumn"></section>
     </main>
    <footer class="flex">
-        <div class="left flexColumn">
-            <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Quatre Pattes</p>
-            <p class="fontSizeAndWeight" fontSize="16" fontWeight="400">Ensemble, protégeons les animaux et donnons-leur une vie meilleure.</p>
-        </div>
-        <div class="middle flexColumn">
-            <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Contact</p>
-            <div class="mail flex">
-                <img src="assets/images/icon-mail.png" alt="icon email.">
-                <p class="fontSizeAndWeight" fontSize="16" fontWeight="400"> contact@quatrepattes.org</p>
-            </div>
-        </div>
-        <div class="right flexColumn">
-            <p class="fontSizeAndWeight" fontSize="16" fontWeight="800">Suivez-nous</p>
-        </div>
+        <div id="footer"></div>
     </footer>
 </body>
 </html>
