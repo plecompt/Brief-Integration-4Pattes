@@ -57,7 +57,6 @@ function resetBackgrounds(){
 }
 
 function resetBorders(){
-    console.log('jarrive cii');
     document.getElementById('10euros').style.border = "none";
     document.getElementById('20euros').style.border = "none";
     document.getElementById('50euros').style.border = "none";

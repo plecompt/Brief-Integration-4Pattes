@@ -59,7 +59,7 @@ Quatre Pattes a mandaté l'agence **WeAreWeb** pour concevoir et développer leu
 ## Installation et utilisation
 1. **Cloner le projet** :
    ```
-   git clone https://github.com/votre-repo/quatre-pattes.git
+   git clone git@github.com:plecompt/Brief-Integration-4Pattes.git
    ```
 2. **Ouvrir le fichier `index.html` dans un navigateur**.
 
