@@ -1,9 +1,9 @@
 document.getElementById('logo').addEventListener('click', ()=>{
-    loadHome(0);
+    loadHome();
 });
 
 document.getElementById('ctaAccueil').addEventListener('click', ()=>{
-    loadHome(0);
+    loadHome();
 });
 
 document.getElementById('ctaContact').addEventListener('click', ()=>{

@@ -51,7 +51,7 @@ function applyStyle() {
 }
 
 // Charge les differentes sections de la page principale
-function loadHome(first){
+function loadHome(){
     loadPage("assets/views/navigation.html", "navigation.js", "navigation");
     loadPage("assets/views/hautpage.html", "", "hautpage");
     loadPage("assets/views/dons.html", "dons.js", "dons");
@@ -60,9 +60,7 @@ function loadHome(first){
     loadPage("assets/views/quizz.html", "quizz.js", "quizz");
     loadPage("assets/views/temoignages.html", "", "temoignages");
     loadPage("assets/views/footer.html", "", "footer");
-    // Décharge la partie contact si first == true;
-    if (!first)
-        unloadPage("contact", "contact.js");
+    unloadPage("contact", "contact.js");
 }
 
 // Charge la section contact et décharge le reste
@@ -83,5 +81,4 @@ function loadContact(){
 // home: { view: "home", components: ["navigation", "hautpage", ... , "footer"] },
 // contact: { view: "contact", components: ["navigation, "contact", "footer""] }
 
-// Pour le premier chargement, pas besoin de deload contact.
-loadHome(1); 
+loadHome(); 
