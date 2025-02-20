@@ -66,5 +66,5 @@ Quatre Pattes a mandaté l'agence **WeAreWeb** pour concevoir et développer leu
 ## Améliorations futures
 - Implémentation d'un **router JavaScript** pour une navigation plus fluide.
 
-## Auteurs
-plecompt
+## Auteur
+- plecompt

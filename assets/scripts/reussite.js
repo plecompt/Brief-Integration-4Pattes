@@ -4,14 +4,15 @@ document.querySelectorAll('.animalReussite').forEach(img => {
         resetBrightness();
         img.style.border = "3px lightgreen solid";
         img.style.filter = "brightness(1)";
-        changeImage(img.dataset.name, img.dataset.date, img.dataset.description);
+        changeImage(img.dataset.name, img.dataset.date, img.dataset.description, img.src);
     })
 });
 
-function changeImage(name, date, description){
+function changeImage(name, date, description, source){
     document.getElementById('animalName').innerHTML = `${name}`;
     document.getElementById('animalDescription').innerHTML = `${description}`;
     document.getElementById('animalDate').innerHTML = `${date}`;
+    document.getElementById('animalImg').src = source;
 }
 
 function resetBordersReussite(){
@@ -29,7 +30,7 @@ function resetBrightness(){
 function init(){
     document.getElementById('animalLuna').style.border = "3px lightgreen solid";
     document.getElementById('animalLuna').style.filter = "brightness(1)";
-    changeImage("Luna", "Janvier 2024", "Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvée sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.");
+    changeImage("Luna", "Janvier 2024", "Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvée sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.", "assets/images/luna.png");
 }
 
 init();
