@@ -18,7 +18,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 /* Voir JS, set --fontSize et --fontWeight à la valeur attribuée dans le fichier HTML */
 .fontSizeAndWeight {
@@ -344,7 +344,7 @@ footer .left, footer .middle, footer .right {
 
 /* Section contact */
 #contact {
-    margin: 5vh;
+    margin: 15vh 5vw;
     gap: 5vh;
 }
 
