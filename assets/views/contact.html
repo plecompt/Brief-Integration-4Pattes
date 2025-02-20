@@ -1,13 +1,15 @@
 <section id="contact" class="flex flexColumn">
     <h1 class="fontSizeAndWeight" fontSize="32" fontWeight="800">Contactez-nous</h1>
-    <form action="submit" id="formulaire" class="flex flexColumn shadows">
+    <form action="" id="formulaire" class="flex flexColumn shadows">
         <div class="flex flexColumn">
             <label for="name">Nom</label>
             <input type="text" id="name">
+            <div id="nameError"></div>
         </div>
         <div class="flex flexColumn">
             <label for="mail">Email</label>
-            <input type="text">
+            <input type="text" id="mail">
+            <div id="mailError"></div>
         </div>
         <div class="flex flexColumn">
             <label for="subject">Sujet</label>
@@ -20,6 +22,7 @@
         <div class="flex flexColumn">
             <label for="message">Message</label>
             <textarea name="message" id="message" placeholder="Votre message" rows="10"></textarea>
+            <div id="messageError"></div>
         </div>
         <button class="flex fontSizeAndWeight" fontSize="16" fontWeight="400" role="button" id="send"><img src="assets/images/icon-contact.png" alt="icône d'avion en papier sur le boutton envoyer">Envoyer</button>
     </form>
