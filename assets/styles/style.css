@@ -16,6 +16,10 @@
     flex-direction: column;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Voir JS, set --fontSize et --fontWeight à la valeur attribuée dans le fichier HTML */
 .fontSizeAndWeight {
     font-size: var(--fontSize);
@@ -115,7 +119,7 @@ a {
     flex: 1;
 }
 
-/* fusionner les css des buttons seul argument qui change = couleur et bgcolor ? e */
+/* fusionner les css des buttons seul argument qui change = couleur et bgcolor ? */
 .middlePart > button {
     background-color: #EFEFEF;
     padding: 20px 20px;

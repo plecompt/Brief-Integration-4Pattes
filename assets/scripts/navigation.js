@@ -9,3 +9,7 @@ document.getElementById('ctaAccueil').addEventListener('click', ()=>{
 document.getElementById('ctaContact').addEventListener('click', ()=>{
     loadContact();
 });
+
+document.getElementById('donationButton').addEventListener('click', ()=>{
+    document.getElementById('dons').scrollIntoView();
+})
