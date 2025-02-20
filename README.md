@@ -61,7 +61,24 @@ Quatre Pattes a mandaté l'agence **WeAreWeb** pour concevoir et développer leu
    ```
    git clone git@github.com:plecompt/Brief-Integration-4Pattes.git
    ```
-2. **Ouvrir le fichier `index.html` dans un navigateur**.
+2. **Requiert un serveur local**
+
+    Méthode 1: Utiliser LiveServer sous VScode
+    
+    Méthode 2: Utiliser un serveur local avec python
+    ```
+    //dans le dossier contenant index.html
+    python -m http.server 8000
+    ```
+    Ouvrir le navigateur et accédez à http://localhost:8000/
+    
+    Méthode 3: Utiliser un serveur Node.js
+    ```
+    //dans le dossier contenant index.html
+    http-server -p 8000
+    ```
+    Ouvrir le navigateur et accédez à http://localhost:8000/
+
 
 ## Améliorations futures
 - Implémentation d'un **router JavaScript** pour une navigation plus fluide.
